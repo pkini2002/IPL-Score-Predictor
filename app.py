@@ -7,9 +7,15 @@ filename = 'first-innings-score-lr-model.pkl'
 regressor = pickle.load(open(filename, 'rb'))
 
 app=Flask(__name__)
+app.debug = True
 
 @app.route("/")
 def home():
+    return render_template('intro.html')
+
+
+@app.route("/scoreprediction")
+def scorepredict():
     return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
