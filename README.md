@@ -1,5 +1,12 @@
 # IPL-Score-Predictor
 
+## Versions Used
+
+- Python &nbsp; `3.10.6`
+- Scikit learn &nbsp; `1.1.3`
+- IDE's used  &nbsp; `Jupyter Notebook and Visual Studio Code`
+- Flask  &nbsp; `2.2.3`
+
 ## Steps to run the project
 
 > Clone the repo in your desired destination location
