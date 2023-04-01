@@ -2,18 +2,18 @@ from flask import Flask, render_template, request
 import pickle
 import numpy as np
 
-# Load the Random Forest CLassifier model
+# Load the Linear Regressor model
 filename = 'first-innings-score-lr-model.pkl'
 regressor = pickle.load(open(filename, 'rb'))
 
 app=Flask(__name__)
-app.debug = True
 
+# Route to display the Intro page
 @app.route("/")
 def home():
     return render_template('intro.html')
 
-
+# Route to display the score prediction page
 @app.route("/scoreprediction")
 def scorepredict():
     return render_template('index.html')
@@ -71,8 +71,7 @@ def predict():
         temp_array = temp_array + [overs, runs, wickets, runs_in_prev_5, wickets_in_prev_5]
         
         data = np.array([temp_array])
-        my_prediction = int(regressor.predict(data)[0])
-              
+        my_prediction = int(regressor.predict(data)[0])     
         return render_template('result.html', lower_limit = my_prediction-10, upper_limit = my_prediction+5)
 
 if __name__ == '__main__':
