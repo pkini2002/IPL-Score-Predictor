@@ -205,6 +205,23 @@ body{
 	top:1px;
 }
 
+.myButton1{
+    background-color: #E9E9E9;
+	color: #000000;
+	box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+    border-radius: 5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 30px;
+	margin-top: 10px;
+	text-decoration:none;
+	transition: 0.5s ease-out;
+}
+
 /* Footer */
 .footer{
 	background-color: #E9E9E9;
@@ -251,4 +268,18 @@ body{
 
 .gif1{
 	width: 40%;
+}
+
+/* Intro page Styles */
+.logo{
+    width: 700px;
+}
+
+.heading{
+    margin-top: 30px;
+    color: #04447b;
+}
+
+.description{
+    color: #04447b;
 }
