@@ -37,3 +37,6 @@ python -m venv venv
 ```bash
 python -m flask --app .\app.py run
 ```
+
+> Check out the 2nd half of the project here
+<a href="https://github.com/Nischitha2109/IPL-Winner-Prediction-">IPL Winner Predictor</a>
